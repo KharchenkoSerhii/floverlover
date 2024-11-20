@@ -3,6 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preload" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600,500italic&display=swap" as="style">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,600,500italic&display=swap">
 	<title>Document</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -82,10 +84,18 @@
 
 			<div class="page__hero hero">
 
-				<div class="hero__big-container">
+
 					<div class="hero__decore">
-						<img src="img/main/cristiane-teston-y-5pd18ETbg-unsplash 1.png" alt="">
+						<!-- <img src="img/main/cristiane-teston-y-5pd18ETbg-unsplash 1.png" alt=""> -->
+						<picture>
+							<source srcset="img/main/hero.webp" type="image/webp">
+							<img src="img/main/hero.jpg" alt="Фон">
+						</picture>
+
 					</div>
+
+
+
 
 				<div class="hero__container">
 
@@ -104,13 +114,6 @@
 								</button>
 							</div>
 
-
-
-
-
-					</div>
-
-					
 					<div class="hero__bottom">
 						<div class="hero__info">
 							<img src="img/icon/flover-icon.png" alt="icon">
@@ -125,6 +128,13 @@
 							<p>Більше 1000 сортів квітів <span>з усього світу</span></p>
 						</div>
 					</div>	
+
+
+
+					</div>
+
+					
+
 					
 
 				</div>
@@ -135,51 +145,7 @@
 			
 
 					
-				<!-- <div class="hero__container">
-
-					<div class="hero__body">
-
-
-							<div class="hero__main">
-								<h1 class="hero__title">
-									<span>Неймовірні</span> <br> <span>Букети</span> зі свіжих квітів
-								</h1>
-								<div class="hero__text">
-									<p>З доставкою по Києву протягом 1 години</p>
-								</div>
-								<button type="button" class="hero__button">
-									<span>ЗАМОВИТИ КВІТИ</span>
-								</button>
-							</div>
-
-
-
-
-
-					</div>
-
-					
-					<div class="hero__bottom">
-						<div class="hero__info">
-							<img src="img/icon/flover-icon.png" alt="icon">
-							<p>Щоденне оновлення <span>свіжих квітів</span></p>
-						</div>
-						<div class="hero__info">
-							<img src="img/icon/navigation-icon.png" alt="icon">
-							<p>Безкоштовна доставка <span>в будь яку точку міста</span></p>
-						</div>
-						<div class="hero__info">
-							<img src="img/icon/world-flover-icon.png" alt="icon">
-							<p>Більше 1000 сортів квітів <span>з усього світу</span></p>
-						</div>
-					</div>	
-					
-
-				</div> -->
-
-
-
-
+	
 
 				
 
@@ -290,9 +256,9 @@
 	</div>
 
 
-
+<!-- 
 	<script src="js/jquery-3.7.1.min.js"></script>
-	<script src="js/slick.min.js"></script>
+	<script src="js/slick.min.js"></script> -->
 	<script src="js/script.js"></script>
 </body>
 
@@ -309,75 +275,19 @@
 
 
 
-
-<!-- 
-				<div class="top-block">
-					<div class="top-block__label">FEATURES</div>
-					<h2 class="top-block__title">What You Can Do?</h2>
-				</div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-							<!-- hero------------------- -->
 			<!-- <div class="page__hero hero">
+
 				<div class="hero__big-container">
 					<div class="hero__decore">
 						<img src="img/main/cristiane-teston-y-5pd18ETbg-unsplash 1.png" alt="">
 					</div>
-				</div>
+
 				<div class="hero__container">
+
 					<div class="hero__body">
-						<div class="hero__top">
-							<h1 class="hero__title">
-								<span>Неймовірні</span> <br> <span>Букети</span> зі свіжих квітів
-							</h1>
-							<div class="hero__text">
-								<p>З доставкою по Києву протягом 1 години</p>
-							</div>
-							<button type="button" class="hero__button">
-								<span>ЗАМОВИТИ КВІТИ</span>
-							</button>
-						</div>
-						<div class="hero__bottom">
-							<div class="hero__info">
-								<img src="img/icon/flover-icon.png" alt="icon">
-								<p>Щоденне оновлення свіжих квітів</p>
-							</div>
-							<div class="hero__info">
-								<img src="img/icon/navigation-icon.png" alt="icon">
-								<p>безкоштовна доставка в будь яку точку міста</p>
-							</div>
-							<div class="hero__info">
-								<img src="img/icon/world-flover-icon.png" alt="icon">
-								<p>більше 1000 сортів квітів з усього світу</p>
-							</div>
-						</div>	
-					</div>
-				</div>
-			</div> -->
-			<!-- hero------------------- -->
 
 
-			<!-- <div class="page__hero hero">
-
-
-
-				<div class="hero__big-container">
-
-					<div class="hero__container">
-						<div class="hero__body">
-							<div class="hero__top">
+							<div class="hero__main">
 								<h1 class="hero__title">
 									<span>Неймовірні</span> <br> <span>Букети</span> зі свіжих квітів
 								</h1>
@@ -388,33 +298,47 @@
 									<span>ЗАМОВИТИ КВІТИ</span>
 								</button>
 							</div>
-						</div>
+
+
+
+
+
 					</div>
+
 					
-					<div class="hero__decore">
-						<img src="img/main/cristiane-teston-y-5pd18ETbg-unsplash 1.png" alt="">
-					</div>
-
-					<div class="hero__container">
-							<div class="hero__bottom">
-								<div class="hero__info">
-									<img src="img/icon/flover-icon.png" alt="icon">
-									<p>Щоденне оновлення свіжих квітів</p>
-								</div>
-								<div class="hero__info">
-									<img src="img/icon/navigation-icon.png" alt="icon">
-									<p>безкоштовна доставка в будь яку точку міста</p>
-								</div>
-								<div class="hero__info">
-									<img src="img/icon/world-flover-icon.png" alt="icon">
-									<p>більше 1000 сортів квітів з усього світу</p>
-								</div>
-							</div>	
-					</div>
-
+					<div class="hero__bottom">
+						<div class="hero__info">
+							<img src="img/icon/flover-icon.png" alt="icon">
+							<p>Щоденне оновлення <span>свіжих квітів</span></p>
+						</div>
+						<div class="hero__info">
+							<img src="img/icon/navigation-icon.png" alt="icon">
+							<p>Безкоштовна доставка <span>в будь яку точку міста</span></p>
+						</div>
+						<div class="hero__info">
+							<img src="img/icon/world-flover-icon.png" alt="icon">
+							<p>Більше 1000 сортів квітів <span>з усього світу</span></p>
+						</div>
+					</div>	
+					
 
 				</div>
 
+					
+				</div>
 
+			
+
+					
+	
+
+
+
+
+
+
+				
+
+						
 
 			</div> -->
