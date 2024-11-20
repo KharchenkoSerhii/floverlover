@@ -1,0 +1,158 @@
+
+
+
+// ========================================================================================
+// Обобщенные блоки заголовки и т.д. ======================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Обобщенные блоки заголовки и т.д. ======================================================
+// ========================================================================================
+
+
+
+// ========================================================================================
+// Класс ibg--------------------------------------------------------
+// .ibg {
+// 	background-position: center;
+// 	background-size: cover;
+// 	background-repeat: no-repeat;
+// 	position: relative;
+
+// 	img {
+// 		display: none;
+// 	}
+// }
+// Класс ibg--------------------------------------------------------
+// ========================================================================================
+
+
+
+
+
+// ========================================================================================
+// Счетчик для списка-----------------------------------------------
+
+// %listCounter {
+// 	list-style-type: none;
+// 	counter-reset: item;
+// 	li {
+// 		position: relative;
+// 		&:before {
+// 			counter-increment: item;
+// 			content: counter(item) ".";
+// 			position: absolute;
+// 			left: 0;
+// 			top: 0;
+// 		}
+// 	}
+// }
+
+// вызов в классе  ---  @extend %listCounter;
+// Счетчик для списка-----------------------------------------------
+// ========================================================================================
+
+
+
+
+// ========================================================================================
+// SPOLLERS---------------------------------------
+// Базовые стили спойлеров
+// Сниппет (HTML): spoller
+
+// Блок со спойлерами
+// .spollers {
+// 	display: grid;
+// 	gap: toRem(12);
+// }
+// Спойлер
+// .spollers__item {
+// 	border-radius: toRem(12);
+// 	overflow: hidden;
+// 	padding: toRem(24) toRem(32) toRem(24) toRem(32);
+// 	transition: all 0.5s ease;
+// 	@media (max-width: $mobileSmall) {
+// 			padding: toRem(16) toRem(16);
+// 	}
+// }
+// .spollers__item._spoller-item-active {
+// 	background-color: #f3f5f9;
+// 	transition: all 0.5s ease;
+// }
+// Заголовок спойлера
+// .spollers__title {
+// 	width: 100%;
+// 	cursor: default;
+// 	text-align: left;
+// 	padding: toRem(0) toRem(40) toRem(0) toRem(0);
+// 	position: relative;
+// 	@include adaptiveValue("font-size", 24, 20);
+// 	font-weight: 700;
+// 	color: $mainColor;
+// 	font-family: inherit;
+// 	background-color: transparent;
+// 	transition: all 0.5s ease;
+
+// 	._spoller-init & {
+// 		cursor: pointer;
+
+// 		&::before,
+// 		&::after {
+// 			content: "";
+// 			position: absolute;
+// 			right: toRem(0);
+// 			top: 50%;
+// 			background-color: $bgColorSemi;
+// 			height: 2px;
+// 			width: 15px;
+// 			transition: transform 0.5s ease 0s;
+// 		}
+
+// 		&::before {
+// 			transform: translate(-75%, -50%) rotate(40deg);
+// 		}
+
+// 		&::after {
+// 			transform: translate(0, -50%) rotate(-40deg);
+// 		}
+
+// 		&._spoller-active {
+// 			&::before {
+// 				transform: translateX(-75%) rotate(-40deg);
+// 			}
+
+// 			&::after {
+// 				transform: rotate(40deg);
+// 			}
+// 		}
+// 	}
+// }
+// Контент спойлера
+// .spollers__body {
+// 	padding: toRem(16) toRem(0) toRem(0) toRem(0);
+// 	font-size: toRem(16);
+// 	line-height: 1.5;
+// }
+// SPOLLERS---------------------------------------
+// ========================================================================================
+
+
+
+
+
+
+
+

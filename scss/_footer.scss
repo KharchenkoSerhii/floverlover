@@ -1,0 +1,234 @@
+// ========================================================================================
+// FOOTER==================================================================================
+// .footer {
+// 		// .footer__container
+// 		&__container {
+// 			display: grid;
+// 			grid-template-columns: 1fr 1fr 1fr;
+
+// 		}
+// 				// .footer__column
+// 		&__column {
+// 			text-align: center;
+// 		}
+// 		// .footer__menu
+// 		&__menu {
+// 			border: 1px solid #fff;
+// 		}
+// 		// .footer__logo
+// 		&__logo {
+
+// 		}
+// 		// .footer__social
+// 		&__social {
+// 			border: 1px solid #fff;
+// 		}
+// 		// .footer__contacts
+// 		&__contacts {
+// 			border: 1px solid #fff;
+// 		}
+// }
+// .menu-footer {
+// 		// .menu-footer__list
+// 		&__list {
+// 			display: grid;
+// 			@include adaptiveValue("gap", 32, 16);
+// 		}
+// 		// .menu-footer__item
+// 		&__item {
+// 		}
+// 		// .menu-footer__link
+// 		&__link {
+// 			font-size: toRem(20);
+// 		}
+// }
+// .social {
+// 		// .social__items
+// 		&__items {
+// 		}
+// }
+// .logo-footer {
+// 		// .logo-footer__image
+// 		&__image {
+// 		}
+// }
+// .cocial {
+// 		// .cocial__item
+// 		&__item {
+// 		}
+// }
+// .contacts {
+// 		// .contacts__phone
+// 		&__phone {
+// 		}
+// 		// .contacts__mail
+// 		&__mail {
+// 		}
+// 		// .contacts__adress
+// 		&__adress {
+// 		}
+// }
+
+.footer {
+	// .footer__container
+	&__container {
+	}
+	// .footer__body
+	&__body {
+		// display: flex;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		column-gap: toRem(20);
+		row-gap: toRem(20);
+		@include adaptiveValue("padding-top", 50, 20);
+		@include adaptiveValue("padding-bottom", 50, 30);
+		@media (max-width: $tablet) {
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: repeat(2, 1fr);
+		}
+		@media (max-width: $mobile) {
+			display: block;
+		}
+	}
+	// .footer__column
+	&__column {
+		// flex: 0 0 33.333%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		// border: 1px solid #fff;
+		@media (max-width: $mobile) {
+		&:not(:last-child) {
+			margin-bottom: toRem(40);
+			position: relative;
+			&::before {
+				content: "";
+				width: 100%;
+				height: 1px;
+				background-color: $color_1;
+				position: absolute;
+				bottom: -20px;
+			}
+		}
+		}
+	}
+	// .footer__menu
+	&__menu {
+		@media (max-width: $tablet) {
+			grid-row: 2 / 3;
+			text-align: center;
+		}	
+	}
+	// .footer__social
+	&__social {
+		text-align: center;
+		@media (max-width: $tablet) {
+		grid-row: 1 / 2;
+		grid-column: 1 / 3;
+		}
+	}
+	// .footer__logo
+	&__logo {
+	}
+	// .footer__contacts
+	&__contacts {
+		text-align: center;
+		@media (max-width: $tablet) {
+			grid-row: 2 / 3;
+		}
+	}
+}
+.menu-footer {
+	// .menu-footer__list
+	&__list {
+		display: grid;
+		@include adaptiveValue("gap", 32, 24);
+	}
+	// .menu-footer__item
+	&__item {
+	}
+	// .menu-footer__link
+	&__link {
+		font-size: toRem(20);
+		text-transform: capitalize;
+		transition: all 0.3s ease;
+		&:hover {
+			color: $color_1;
+		}
+	}
+}
+.logo-footer {
+	svg rect.background {
+		transition: all 0.3s ease;
+	}
+	&:hover {
+		p {
+			color: $color_1;
+		}
+		svg rect.background {
+			fill: $color_1;
+		}
+	}
+	// .logo-footer__image
+	&__image {
+		p {
+			font-size: toRem(24);
+			text-transform: uppercase;
+			transition: all 0.3s ease;
+		}
+	}
+}
+.social__items {
+	display: flex;
+	gap: toRem(46);
+	padding-top: toRem(50);
+}
+.cocial {
+	// .cocial__item
+	&__item {
+		display: flex;
+		flex-direction: column;
+
+		width: toRem(40);
+		height: toRem(40);
+		transition: all 0.3s ease;
+		&:hover {
+			transform: scale(1.4);
+		}
+		img {
+			max-width: 100%;
+			max-height: 100%;
+			object-fit: contain;
+		}
+	}
+}
+.contacts {
+	display: grid;
+	gap: toRem(24);
+	line-height: 1.3;
+	// .contacts__phone
+	&__phone {
+	}
+	//.contacts__column
+	&__column {
+		a {
+			font-size: toRem(24);
+			transition: all 0.3s ease;
+			&:hover {
+			color: $color_1;
+			}
+		}
+		p {
+			font-size: toRem(20);
+		}
+	}
+	// .contacts__mail
+	&__mail {
+	}
+	// .contacts__adress
+	&__adress {
+	}
+}
+
+// FOOTER==================================================================================
+// ========================================================================================
